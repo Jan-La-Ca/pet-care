@@ -1,0 +1,225 @@
+:root {
+    --primaryColor: #e1c340;
+    --blackColor: #232323;
+    --grayColor: #6f6f6f;
+    --aquaColor: #4cd7d0;
+    --backgroundColor: #ffffff;
+}
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Cabin", sans-serif;
+    font-size: 16px;
+    color: var(--grayColor);
+    font-weight: 400;
+    line-height: 28px;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    position: relative;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+.btn {
+    border-radius: 5px 20px 5px;
+    background: var(--primaryColor);
+    color: var(--backgroundColor);
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 20px 40px 20px;
+    line-height: 1;
+    box-shadow: 2px 0 20px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+.small {
+    font-size: 14px;
+    padding: 10px 20px 10px;
+}
+
+/* Banner */
+.banner {
+    background-image: url("../images/slide-04.jpg");
+    height: 648px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 90px;
+}
+.banner-container {
+    position: absolute;
+    top: 140px;
+    left: 20px;
+    max-width: 500px;
+}
+.banner-container h1 {
+    font-size: 60px;
+    font-weight: 800;
+    color: var(--blackColor);
+    font-family: "Nunito", sans-serif;
+    line-height: normal;
+}
+.banner-container p {
+    font-size: 28px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+/* Service */
+.service {
+    margin-bottom: 90px;
+    position: relative;
+}
+.service-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+}
+.service-block {
+    background-color: #f7f7f7;
+    padding: 30px 0;
+    text-align: center;
+    flex: 1;
+}
+.service-icon {
+    color: #4cd7d0;
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.service-block h5 {
+    font-size: 18px;
+    color: var(--blackColor);
+    font-family: "Nunito", sans-serif;
+    margin-bottom: 5px;
+}
+.service-block p {
+    color: var(--blackColor);
+    line-height: 28px;
+}
+
+/* Banner 2 */
+
+.banner2-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+}
+.banner2-wrapper:first-child {
+    margin-bottom: 20px;
+}
+.banner2-block {
+    position: relative;
+}
+.banner2-content {
+    position: absolute;
+    top: 22%;
+    left: 8%;
+}
+.top-content {
+    top: 65%;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.top-content h5 {
+    font-size: 40px;
+    font-weight: 500;
+    font-family: "Engagement", cursive;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.top-content2 h4 {
+    margin-bottom: 30px;
+}
+.top-content2 h5 {
+    font-family: "Engagement", cursive;
+    font-weight: 500;
+    font-size: 40px;
+    color: var(--blackColor);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.bottom-content h5 {
+    color: var(--blackColor);
+}
+
+/* Deal */
+.deal {
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+.title-container {
+    font-size: 40px;
+    font-weight: 900;
+    font-family: "Nunito", sans-serif;
+    color: var(--blackColor);
+    line-height: normal;
+}
+.deal-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.deal-block:first-child {
+    margin-right: 170px;
+}
+.deal-block-title {
+    color: #4cd7d0;
+    font-size: 26px;
+    font-family: "Engagement", cursive;
+}
+.deal-block h4 {
+    font-weight: 800;
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+.deal-block-desc {
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.8px;
+    margin-bottom: 40px;
+}
+.deal-block-ul {
+    margin-bottom: 40px;
+}
+.deal-li {
+    display: inline-block;
+    padding: 0 30px;
+    border-right: 1px solid #c5c5c5;
+    text-align: center;
+}
+.deal-li:first-child {
+    padding-left: 0;
+}
+.deal-li-time {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--blackColor);
+    line-height: normal;
+    position: relative;
+}

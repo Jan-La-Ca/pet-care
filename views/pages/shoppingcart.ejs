@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pow for pet care</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Engagement&display=swap" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <%- include('../partials/head') %>
+        <link rel="stylesheet" href="/css/shoppingcart.css" />
+        <script src="/js/moment.js"></script>
+    </head>
+    <body>
+        <%- include('../partials/header.ejs') %>
+        <div id="myModal" class="modal">
+            <div class="modal__layout">
+                <div class="loader"></div>
+                <h2>Paying...</h2>
+            </div>
+        </div>
+        <main>
+            <div class="container">
+                <div class="sub-title">
+                    Home >>
+                    <span>Shopping Cart</span>
+                </div>
+                <h3 class="big-title">Shopping Cart</h3>
+                <div class="table-content">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="thead-img">IMAGE</th>
+                                <th class="thead-name">PRODUCT</th>
+                                <th>PRICE</th>
+                                <th>QUANTITY</th>
+                                <th>TOTAL</th>
+                                <th>REMOVE</th>
+                            </tr>
+                        </thead>
+                        <tbody id="listSP"></tbody>
+                    </table>
+                </div>
+                <div class="action-cart">
+                    <div class="container-action">
+                        <div></div>
+                        <div class="cart-total-price">
+                            <div>Total Price: <span id="cart-total-price">0</span></div>
+                            <div>Discount: <span id="discount-price">0</span></div>
+                            <div>Total Bill: <span id="total-bill">0</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="control-cart">
+                    <div class="block-remove-all">
+                        <button class="btn-remove-all" id="btn-remove-all" onclick="removeAll()">Remove All</button>
+                    </div>
+                    <div class="block-return-shop">
+                        <a href="/shop"><button class="btn-return-shop" id="btn-return-shop">Continue Shopping</button></a>
+                    </div>
+                    <div class="block-checkout"><button class="btn-checkout" id="btn-checkout" onclick="checkOut()">Checkout</button></div>
+                </div>
+            </div>
+        </main>
+        <script src="/js/shoppingcart.js"></script>
+        <%- include('../partials/footer.ejs') %> <%- include('../partials/utils.ejs') %>
+    </body>
+</html>
